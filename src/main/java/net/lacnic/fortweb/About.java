@@ -1,4 +1,4 @@
-package net.lacnic;
+package net.lacnic.fortweb;
 
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 

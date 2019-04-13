@@ -1,5 +1,6 @@
-package net.lacnic;
+package net.lacnic.fortweb;
 
+import net.lacnic.fortweb.FortTemplate;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 public class HomePage extends FortTemplate {
