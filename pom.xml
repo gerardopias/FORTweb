@@ -25,10 +25,10 @@
 	<packaging>war</packaging>
 	<version>0.0</version>
 		<!-- TODO project name  -->
-	<name>quickstart</name>
+	<name>fort project</name>
 	<description></description>
 	<!--
-		<organization>
+		<organization>sudo
 			<name>company name</name>
 			<url>company url</url>
 		</organization>
