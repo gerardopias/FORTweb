@@ -2,7 +2,7 @@
 <html xmlns:wicket="http://wicket.apache.org">
 	<head>
 		<meta charset="utf-8" />
-		<title>Apache Wicket Quickstart</title>
+		<title>FORT project</title>
 		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
 	</head>
@@ -13,11 +13,20 @@
 		</div>
 		<div class="row mt-5">
 			<div class="col">
-			<h3>Fort project</h3>
-			<p>
-				The goal of the project is to contribute to RPKI deployment as a means to render routing systems –a basic building block of Internet infrastructure– more secure and resilient. In turn, the project will contribute to the prevention of route hijacks and the exposure of censorship and surveillance attempts that rely on vulnerabilities of the routing system.
-				<a href="About.html">More about FORT</a>!
-			</p>
+				<h3 wicket:id="homeAboutTitle">Sobre FORT</h3>
+				<h4 wicket:id="homeAboutSubTitle">FORT es una inicativa de LACNIC y NIC.MX por una Internet más libre y abierta.</h4>
+				<p wicket:id="homeAboutContentP1">
+					El objetivo del proyecto es contribuir al despliegue de RPKI como un medio para hacer que los sistemas de enrutamiento, un componente básico de la infraestructura de Internet, sean más seguros y resilientes. A su vez, el proyecto contribuirá a la prevención de secuestros de ruta y la exposición de la censura y los intentos de vigilancia que dependen de las vulnerabilidades del sistema de enrutamiento.
+				</p>
+				<p wicket:id="homeAboutContentP2">
+					El proyecto trabajará hacia tres objetivos específicos:
+					Desarrollar un validador de Infraestructura de clave pública para recursos de numeración de Internet (RPKI).
+					Realizar una campaña de despliegue en América Latina y el Caribe.
+					Producir un informe y desarrollar una herramienta de seguimiento para estudiar incidentes de enrutamiento en la región y exponer secuestros intencionales.
+
+				</p><wicket:link><a href="About.html">Conocer más</a>!
+				</wicket:link>
+
 			</div>
 		</div>
 		<div class="row mt-5">
