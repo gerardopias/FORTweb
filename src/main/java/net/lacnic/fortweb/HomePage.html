@@ -1,87 +1,104 @@
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org">
-	<head>
-		<meta charset="utf-8" />
-		<title>FORT project</title>
-		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
-		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
-	</head>
-	<body>
-	<wicket:extend>
-		<div class="row" style="margin-top: 5rem!important;">
+<head>
+	<meta charset="utf-8"/>
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+	      type='text/css'/>
+</head>
+<body>
+<wicket:extend>
+	<div class="row" style="margin-top: 5rem!important;">
 
+	</div>
+	<div class="row mt-5">
+		<div class="col">
+			<h3>
+				<wicket:message key="home.about.title"/>
+			</h3>
+			<h4>
+				<wicket:message key="home.about.subtitle"/>
+			</h4>
+			<p>
+				<wicket:message key="home.about.content.p1"/>
+			</p>
+			<p>
+				<wicket:message key="home.about.content.p2"/>
+			</p>
+			<ul>
+				<li>
+					<wicket:message key="home.about.content.p2.li.1"/>
+				</li>
+				<li>
+					<wicket:message key="home.about.content.p2.li.2"/>
+				</li>
+				<li>
+					<wicket:message key="home.about.content.p2.li.3"/>
+				</li>
+			</ul>
+			<wicket:link><a href="About.html"><wicket:message key="home.link.about"/></a></wicket:link>
 		</div>
-		<div class="row mt-5">
-			<div class="col">
-				<h3 wicket:id="homeAboutTitle">Sobre FORT</h3>
-				<h4 wicket:id="homeAboutSubTitle">FORT es una inicativa de LACNIC y NIC.MX por una Internet más libre y abierta.</h4>
-				<p wicket:id="homeAboutContentP1">
-					El objetivo del proyecto es contribuir al despliegue de RPKI como un medio para hacer que los sistemas de enrutamiento, un componente básico de la infraestructura de Internet, sean más seguros y resilientes. A su vez, el proyecto contribuirá a la prevención de secuestros de ruta y la exposición de la censura y los intentos de vigilancia que dependen de las vulnerabilidades del sistema de enrutamiento.
-				</p>
-				<p wicket:id="homeAboutContentP2">
-					El proyecto trabajará hacia tres objetivos específicos:
-					Desarrollar un validador de Infraestructura de clave pública para recursos de numeración de Internet (RPKI).
-					Realizar una campaña de despliegue en América Latina y el Caribe.
-					Producir un informe y desarrollar una herramienta de seguimiento para estudiar incidentes de enrutamiento en la región y exponer secuestros intencionales.
-
-				</p><wicket:link><a href="About.html">Conocer más</a>!
-				</wicket:link>
-
-			</div>
-		</div>
-		<div class="row mt-5">
-			<div class="col-sm-6">
-				<div class="card text-center">
-					<div class="card-header">
-						FORT Validator
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">RPKI validator</h5>
-						<p class="card-text">LACNIC and NIC.MX are currently collaborating to develop a free, open source RPKI Validator software. This software will allow operators to validate the BGP routing information against the RPKI repository for use in router configuration and resolution.</p>
-						<a href="#" class="btn btn-primary">Go</a>
-					</div>
-					<div class="card-footer text-muted">
-						2 days ago
-					</div>
+	</div>
+	<div class="row mt-5">
+		<div class="col-sm-6">
+			<div class="card text-center">
+				<div class="card-header">
+					FORT Validator
 				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="card text-center">
-					<div class="card-header">
-						FORT Tracking Tool
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">Tracking Tool</h5>
-						<p class="card-text">Coming soon. An open access, digital tool which will collect data from the LACNIC and RIPE validators to document new incidents and identify regional trends in route hijacks.</p>
-						<a href="#" class="btn btn-primary">Go</a>
-					</div>
-					<div class="card-footer text-muted">
-						2 days ago
-					</div>
+				<div class="card-body">
+					<h5 class="card-title">RPKI validator</h5>
+					<p class="card-text">LACNIC and NIC.MX are currently collaborating to develop a free, open source
+						RPKI Validator software. This software will allow operators to validate the BGP routing
+						information against the RPKI repository for use in router configuration and resolution.</p>
+					<a href="#" class="btn btn-primary">Go</a>
+				</div>
+				<div class="card-footer text-muted">
+					2 days ago
 				</div>
 			</div>
 		</div>
-
-
-		<div class="row mt-5">
-			<div class="col">
-				<h3>Responsables</h3>
-				<p>
-					LACNIC, the Regional Internet Registry, operates the Resource Certification System (RPKI) for the number resources assigned in the region and is a key player in promoting RPKI in the region. Few organizations worldwide work on routing security and LACNIC has been an early contributor in this field.
-					NIC.MX also shares this commitment as reflected to the partnership with LACNIC to collaborate in the development of a RPKI validator, for which both organizations are contributing financial and human resources.
-					<a href="/about">More about FORT</a>!
-				</p>
+		<div class="col-sm-6">
+			<div class="card text-center">
+				<div class="card-header">
+					FORT Tracking Tool
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Tracking Tool</h5>
+					<p class="card-text">Coming soon. An open access, digital tool which will collect data from the
+						LACNIC and RIPE validators to document new incidents and identify regional trends in route
+						hijacks.</p>
+					<a href="#" class="btn btn-primary">Go</a>
+				</div>
+				<div class="card-footer text-muted">
+					2 days ago
+				</div>
 			</div>
 		</div>
-		<div class="row mt-5">
-			<div class="col">
-				<h3>Sponsors</h3>
-				<p>
-					<a href="/about">OTF</a>
-				</p>
-			</div>
-		</div>
+	</div>
 
-		</wicket:extend>
-	</body>
+
+	<div class="row mt-5">
+		<div class="col">
+			<h3>Responsables</h3>
+			<p>
+				LACNIC, the Regional Internet Registry, operates the Resource Certification System (RPKI) for the number
+				resources assigned in the region and is a key player in promoting RPKI in the region. Few organizations
+				worldwide work on routing security and LACNIC has been an early contributor in this field.
+				NIC.MX also shares this commitment as reflected to the partnership with LACNIC to collaborate in the
+				development of a RPKI validator, for which both organizations are contributing financial and human
+				resources.
+				<a href="/about">More about FORT</a>!
+			</p>
+		</div>
+	</div>
+	<div class="row mt-5">
+		<div class="col">
+			<h3>Sponsors</h3>
+			<p>
+				<a href="/about">OTF</a>
+			</p>
+		</div>
+	</div>
+
+</wicket:extend>
+</body>
 </html>

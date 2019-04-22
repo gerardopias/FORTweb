@@ -28,7 +28,7 @@ public class HeaderPanel extends Panel {
 						getSession().setLocale(listItem.getModelObject());
 					}
 				};
-				localeLink.add(new Label("locale_label", listItem.getModelObject().getDisplayLanguage()));
+				localeLink.add(new Label("locale_label", listItem.getModelObject().getISO3Language()));
 				listItem.add(localeLink);
 				add(listItem);
 			}

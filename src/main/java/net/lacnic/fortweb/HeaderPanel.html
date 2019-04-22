@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
-
 <body>
 <wicket:panel>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #079dca;">
 		<div class="container">
 			<a class="navbar-brand" href="#">
 				<wicket:link>
-					<img src="logo_FORT_nicylacnic.svg" width="30" height="30" alt="FortProject">Fort project</wicket:link>
+					<img src="logo_FORT_nicylacnic.svg" width="30" height="30" alt="FortProject">
+					<wicket:message key="template.title"/>
+				</wicket:link>
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -18,23 +19,33 @@
 				<ul class="navbar-nav d-flex justify-content-end">
 					<li class="nav-item active">
 						<wicket:link>
-							<a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="HomePage.html">
+								<wicket:message key="template.home"/><span class="sr-only">(current)</span></a>
 						</wicket:link>
 					</li>
 					<li class="nav-item">
 						<wicket:link>
-							<a class="nav-link" href="About.html">About</a>
+							<a class="nav-link" href="About.html"><wicket:message key="template.about"/></a>
 						</wicket:link>
-
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="FortValidator.html">Fort Validator</a>
+						<a class="nav-link" href="https://nicmx.github.io/FORT-validator/">
+							<wicket:message key="template.validator"/>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="FortTT.html">Fort TT</a>
+						<wicket:link>
+							<a class="nav-link" href="FortTT.html">
+								<wicket:message key="template.tt"/>
+							</a>
+						</wicket:link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="Contact.html">Contact</a>
+						<wicket:link>
+							<a class="nav-link" href="Contact.html">
+								<wicket:message key="template.contact"/>
+							</a>
+						</wicket:link>
 					</li>
 				</ul>
 			</div>

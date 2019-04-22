@@ -1,5 +1,7 @@
 package net.lacnic.fortweb;
 
+import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.ResourceModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 public class About extends FortTemplate {
@@ -10,9 +12,6 @@ public class About extends FortTemplate {
 		setStatelessHint(true);
 
 		//add(new Label("version", getApplication().getFrameworkSettings().getVersion()));
-
-		// TODO Add your page's components here
-
 	}
 	@Override
 	protected void onInitialize() {
@@ -23,5 +22,10 @@ public class About extends FortTemplate {
 				System.out.println("Component " + component.getId() + " is not stateless");
 			}
 		});
+	}
+
+	@Override
+	protected IModel<String> getTitleModel() {
+		return new ResourceModel("about.title");
 	}
 }
