@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
-	      type='text/css'/>
+		  type='text/css'/>
 </head>
 <body>
 <wicket:extend>
@@ -35,41 +35,45 @@
 					<wicket:message key="home.about.content.p2.li.3"/>
 				</li>
 			</ul>
-			<wicket:link><a href="About.html"><wicket:message key="home.about.link"/></a></wicket:link>
+			<wicket:link><a href="About.html">
+				<wicket:message key="home.about.link"/>
+			</a></wicket:link>
 		</div>
 	</div>
 	<div class="row mt-5">
 		<div class="col-sm-6">
 			<div class="card text-center">
 				<div class="card-header">
-					FORT Validator
+					<wicket:message key="home.validator.card"/>
 				</div>
 				<div class="card-body">
-					<h5 class="card-title">RPKI validator</h5>
-					<p class="card-text">LACNIC and NIC.MX are currently collaborating to develop a free, open source
-						RPKI Validator software. This software will allow operators to validate the BGP routing
-						information against the RPKI repository for use in router configuration and resolution.</p>
-					<a href="#" class="btn btn-primary">Go</a>
-				</div>
-				<div class="card-footer text-muted">
-					2 days ago
+					<h5 class="card-title">
+						<wicket:message key="home.validator.card.title"/>
+					</h5>
+					<p class="card-text">
+						<wicket:message key="home.validator.card.content"/>
+					</p>
+					<a href="https://nicmx.github.io/FORT-validator" class="btn btn-primary">
+						<wicket:message key="home.validator.card.link"/>
+					</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-6">
 			<div class="card text-center">
 				<div class="card-header">
-					FORT Tracking Tool
+					<wicket:message key="home.tt.card"/>
 				</div>
 				<div class="card-body">
-					<h5 class="card-title">Tracking Tool</h5>
-					<p class="card-text">Coming soon. An open access, digital tool which will collect data from the
-						LACNIC and RIPE validators to document new incidents and identify regional trends in route
-						hijacks.</p>
-					<a href="#" class="btn btn-primary">Go</a>
-				</div>
-				<div class="card-footer text-muted">
-					2 days ago
+					<h5 class="card-title">
+						<wicket:message key="home.tt.card.title"/>
+					</h5>
+					<p class="card-text">
+						<wicket:message key="home.tt.card.content"/>
+					</p>
+					<a href="#" class="btn btn-primary">
+						<wicket:message key="home.tt.card.link"/>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -78,23 +82,21 @@
 
 	<div class="row mt-5">
 		<div class="col">
-			<h3>Responsables</h3>
+			<h3>
+				<wicket:message key="home.team.title"/>
+			</h3>
 			<p>
-				LACNIC, the Regional Internet Registry, operates the Resource Certification System (RPKI) for the number
-				resources assigned in the region and is a key player in promoting RPKI in the region. Few organizations
-				worldwide work on routing security and LACNIC has been an early contributor in this field.
-				NIC.MX also shares this commitment as reflected to the partnership with LACNIC to collaborate in the
-				development of a RPKI validator, for which both organizations are contributing financial and human
-				resources.
-				<a href="/about">More about FORT</a>!
+				<a href="https://www.lacnic.net/">LACNIC</a> & <a href="https://www.nicmexico.mx/">NIC.MX</a>
 			</p>
 		</div>
 	</div>
 	<div class="row mt-5">
 		<div class="col">
-			<h3>Sponsors</h3>
+			<h3>
+				<wicket:message key="home.sponsors.title"/>
+			</h3>
 			<p>
-				<a href="/about">OTF</a>
+				<a href="">OTF</a>
 			</p>
 		</div>
 	</div>
