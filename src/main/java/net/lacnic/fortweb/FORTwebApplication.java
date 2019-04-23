@@ -13,10 +13,11 @@ public class FORTwebApplication extends WebApplication {
     }
 }
 */
+
 import org.apache.wicket.Page;
-        import org.apache.wicket.protocol.http.WebApplication;
-        import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
-        import org.springframework.web.context.support.WebApplicationContextUtils;
+import org.apache.wicket.protocol.http.WebApplication;
+import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 public class FORTwebApplication extends WebApplication {
     @Override
@@ -27,6 +28,8 @@ public class FORTwebApplication extends WebApplication {
     protected void init() {
         super.init();
         mountPage("/about",About.class);
+        mountPage("/trackingtool", FortTT.class);
+        mountPage("/contact", Contact.class);
         getComponentInstantiationListeners().add(new SpringComponentInjector(this,
                 WebApplicationContextUtils.getRequiredWebApplicationContext(
                         getServletContext())));
