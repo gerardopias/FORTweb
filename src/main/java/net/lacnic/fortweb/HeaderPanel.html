@@ -1,71 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
 <body>
 <wicket:panel>
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #079dca;">
+	<!-- Header -->
+	<header class="site-header">
 		<div class="container">
-			<a class="navbar-brand" href="#">
-				<wicket:link>
-					<img src="logo_FORT_nicylacnic.svg" width="30" height="30" alt="FortProject">
-					<wicket:message key="template.title"/>
-				</wicket:link>
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<div class="row align-items-center">
+				<div class="col">
+					<div class="logo">
+						<wicket:link>
+							<a href="#" title="" class="d-flex">
+								<img src="assets/icons/logo_Fort.svg" alt="Fort">
+								<h1 class="text-blue-light">
+									<wicket:message key="template.title"/>
+								</h1>
+							</a>
+						</wicket:link>
 
-			<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-				<ul class="navbar-nav d-flex justify-content-end">
-					<li class="nav-item active">
-						<wicket:link>
-							<a class="nav-link" href="HomePage.html">
-								<wicket:message key="template.home"/>
-								<span class="sr-only">(current)</span></a>
-						</wicket:link>
-					</li>
-					<li class="nav-item">
-						<wicket:link>
-							<a class="nav-link" href="About.html">
-								<wicket:message key="template.about"/>
-							</a>
-						</wicket:link>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://nicmx.github.io/FORT-validator/">
-							<wicket:message key="template.validator"/>
-						</a>
-					</li>
-					<li class="nav-item">
-						<wicket:link>
-							<a class="nav-link" href="FortTT.html">
-								<wicket:message key="template.tt"/>
-							</a>
-						</wicket:link>
-					</li>
-					<li class="nav-item">
-						<wicket:link>
-							<a class="nav-link" href="Contact.html">
-								<wicket:message key="template.contact"/>
-							</a>
-						</wicket:link>
-					</li>
-				</ul>
-			</div>
-			<div class="collapse navbar-collapse d-flex justify-content-end">
-				<ul class="navbar-nav d-flex justify-content-end">
-					<li>
-						<div class="nav-item" wicket:id="locale_item">
-							<a wicket:id="locale_link"><label wicket:id="locale_label"></label></a>
-						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
+				<div class="col-auto">
+					<nav class="site-nav">
+						<ul>
+							<li>
+								<wicket:link>
+									<a class="active-item" href="HomePage.html">
+										<wicket:message key="template.home"/>
+									</a>
+								</wicket:link>
+							</li>
+							<li>
+								<wicket:link>
+									<a href="About.html">
+										<wicket:message key="template.about"/>
+									</a>
+								</wicket:link>
+							</li>
+							<li><a href="https://nicmx.github.io/FORT-validator/">
+								<wicket:message key="template.validator"/>
+							</a></li>
+							<li>
+								<wicket:link>
+									<a href="FortTT.html">
+										<wicket:message key="template.tt"/>
+									</a>
+								</wicket:link>
+							</li>
+							<li>
+								<wicket:link><a href="Contact.html">
+									<wicket:message key="template.contact"/>
+								</a></wicket:link>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-auto">
+					<ul>
+						<li>
+							<div class="nav-item" wicket:id="locale_item">
+								<a wicket:id="locale_link"><label wicket:id="locale_label"></label></a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</nav>
-	<div class="row" style="margin-top: 5rem!important;">
-	</div>
 
+	</header>
 </wicket:panel>
 </body>
 

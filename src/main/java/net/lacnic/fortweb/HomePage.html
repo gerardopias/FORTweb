@@ -7,78 +7,112 @@
 </head>
 <body>
 <wicket:extend>
-	<div class="row mt-5">
-		<div class="col">
-			<h3>
-				<wicket:message key="home.about.title"/>
-			</h3>
-			<h4>
-				<wicket:message key="home.about.subtitle"/>
-			</h4>
-			<p>
-				<wicket:message key="home.about.content.p1"/>
-			</p>
-			<p>
-				<wicket:message key="home.about.content.p2"/>
-			</p>
-			<ul>
-				<li>
-					<wicket:message key="home.about.content.p2.li.1"/>
-				</li>
-				<li>
-					<wicket:message key="home.about.content.p2.li.2"/>
-				</li>
-				<li>
-					<wicket:message key="home.about.content.p2.li.3"/>
-				</li>
-			</ul>
-			<wicket:link><a href="About.html">
-				<wicket:message key="home.about.link"/>
-			</a></wicket:link>
-		</div>
-	</div>
-	<div class="row mt-5">
-		<div class="col-sm-6">
-			<div class="card text-center">
-				<div class="card-header">
-					<wicket:message key="home.validator.card"/>
+
+	<section class="site-section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg">
+					<h2 class="text-blue-light">Proyecto <strong>FORT</strong></h2>
+					<p class="text-high">FORT es una inicativa de LACNIC y NIC.MX por una Internet más libre y
+						abierta.</p>
+					<a href="#" class="btn">Conocer más</a>
 				</div>
-				<div class="card-body">
-					<h5 class="card-title">
-						<wicket:message key="home.validator.card.title"/>
-					</h5>
-					<p class="card-text">
-						<wicket:message key="home.validator.card.content"/>
-					</p>
-					<a href="https://nicmx.github.io/FORT-validator" class="btn btn-primary">
-						<wicket:message key="home.validator.card.link"/>
-					</a>
+				<div class="col-lg">
+					<figure>
+						<wicket:link>
+							<img src="assets/images/picture.png" alt="">
+						</wicket:link>
+					</figure>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-6">
-			<div class="card text-center">
-				<div class="card-header">
-					<wicket:message key="home.tt.card"/>
-				</div>
-				<div class="card-body">
-					<h5 class="card-title">
-						<wicket:message key="home.tt.card.title"/>
-					</h5>
-					<p class="card-text">
-						<wicket:message key="home.tt.card.content"/>
-					</p>
-					<wicket:link>
-						<a href="FortTT.html" class="btn btn-primary">
-							<wicket:message key="home.tt.card.link"/>
+	</section>
+
+	<section class="site-section bg-blue-dark">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-5">
+					<div class="box">
+						<h3>
+							<wicket:message key="home.validator.card"/>
+						</h3>
+						<h4>
+							<wicket:message key="home.validator.card.title"/>
+						</h4>
+						<p>
+							<wicket:message key="home.validator.card.content"/>
+						</p>
+						<a href="https://nicmx.github.io/FORT-validator" class="btn">
+							<wicket:message key="home.validator.card.link"/>
 						</a>
-					</wicket:link>
-
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="box">
+						<h3>
+							<wicket:message key="home.tt.card"/>
+						</h3>
+						<h4>
+							<wicket:message key="home.tt.card.title"/>
+						</h4>
+						<p>
+							<wicket:message key="home.tt.card.content"/>
+						</p>
+						<wicket:link>
+							<a href="FortTT.html" class="btn">
+								<wicket:message key="home.tt.card.link"/>
+							</a>
+						</wicket:link>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
+	</section>
+	<section class="site-section">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col col-lg-6 text-center">
+					<h3 class="text-white">
+						<wicket:message key="home.about.title"/>
+					</h3>
+					<p class="text-high text-blue-light">
+						<wicket:message key="home.about.subtitle"/>
+					</p>
+					<div class="row align-items-center justify-content-md-center">
+						<div class="col-lg-5">
+							<figure>
+								<wicket:link>
+									<img src="assets/icons/ico-help.svg">
+								</wicket:link>
+							</figure>
+						</div>
+						<div class="col-lg-7 text-left">
+							<p>
+								<wicket:message key="home.about.content.p1"/>
+							</p>
+							<p>
+								<wicket:message key="home.about.content.p2"/>
+							</p>
+							<ul>
+								<li>
+									<wicket:message key="home.about.content.p2.li.1"/>
+								</li>
+								<li>
+									<wicket:message key="home.about.content.p2.li.2"/>
+								</li>
+								<li>
+									<wicket:message key="home.about.content.p2.li.3"/>
+								</li>
+							</ul>
+							<wicket:link><a href="About.html">
+								<wicket:message key="home.about.link"/>
+							</a></wicket:link>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<div class="row mt-5">
 		<div class="col">
@@ -90,17 +124,21 @@
 			</p>
 		</div>
 	</div>
-	<div class="row mt-5">
-		<div class="col">
-			<h3>
-				<wicket:message key="home.sponsors.title"/>
-			</h3>
-			<p>
-				<a href="">OTF</a>
-			</p>
-		</div>
-	</div>
 
+	<section class="site-section bg-blue-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3 class="text-white">
+						<wicket:message key="home.sponsors.title"/>
+					</h3>
+					<p>
+						<a href="">OTF</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </wicket:extend>
 </body>
 </html>

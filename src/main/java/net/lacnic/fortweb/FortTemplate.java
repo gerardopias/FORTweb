@@ -11,6 +11,7 @@ public class FortTemplate extends WebPage {
 	public FortTemplate() {
 		add(new HeaderPanel("headerPanel"));
 		add(new Label("template.title", getTitleModel()));
+		add(new FooterPanel("footerPanel"));
 	}
 
 	/**
