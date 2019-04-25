@@ -5,7 +5,7 @@
 	<!-- Header -->
 	<header class="site-header">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row align-items-end">
 				<div class="col">
 					<div class="logo">
 						<wicket:link>
@@ -20,6 +20,20 @@
 					</div>
 				</div>
 				<div class="col-auto">
+					<div class="menu-open">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+					<nav class="site-nav small-nav d-flex justify-content-md-end">
+						<ul>
+							<li>
+								<div class="nav-item" wicket:id="locale_item">
+									<a wicket:id="locale_link"><label wicket:id="locale_label"></label></a>
+								</div>
+							</li>
+						</ul>
+					</nav>
 					<nav class="site-nav">
 						<ul>
 							<li>
@@ -53,15 +67,6 @@
 							</li>
 						</ul>
 					</nav>
-				</div>
-				<div class="col-auto">
-					<ul>
-						<li>
-							<div class="nav-item" wicket:id="locale_item">
-								<a wicket:id="locale_link"><label wicket:id="locale_label"></label></a>
-							</div>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</div>

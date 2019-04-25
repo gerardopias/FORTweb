@@ -71,7 +71,7 @@
 	<section class="site-section">
 		<div class="container">
 			<div class="row justify-content-md-center">
-				<div class="col col-lg-6 text-center">
+				<div class="col col-lg-11 text-center">
 					<h3 class="text-white">
 						<wicket:message key="home.about.title"/>
 					</h3>
@@ -79,21 +79,23 @@
 						<wicket:message key="home.about.subtitle"/>
 					</p>
 					<div class="row align-items-center justify-content-md-center">
-						<div class="col-lg-5">
-							<figure>
-								<wicket:link>
-									<img src="assets/icons/ico-help.svg">
-								</wicket:link>
-							</figure>
-						</div>
-						<div class="col-lg-7 text-left">
+						<div class="col-lg-4 text-left">
 							<p>
 								<wicket:message key="home.about.content.p1"/>
 							</p>
+						</div>
+						<div class="col-lg-4">
+							<figure>
+								<wicket:link>
+									<img src="assets/icons/ico-help.svg" width="250px">
+								</wicket:link>
+							</figure>
+						</div>
+						<div class="col-lg-4 text-left">							
 							<p>
 								<wicket:message key="home.about.content.p2"/>
 							</p>
-							<ul>
+							<ul class="list-bullet">
 								<li>
 									<wicket:message key="home.about.content.p2.li.1"/>
 								</li>
@@ -113,18 +115,20 @@
 			</div>
 		</div>
 	</section>
-
-	<div class="row mt-5">
-		<div class="col">
-			<h3>
-				<wicket:message key="home.team.title"/>
-			</h3>
-			<p>
-				<a href="https://www.lacnic.net/">LACNIC</a> & <a href="https://www.nicmexico.mx/">NIC.MX</a>
-			</p>
+	<section class="site-section">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>
+						<wicket:message key="home.team.title"/>
+					</h3>
+					<p>
+						<a href="https://www.lacnic.net/">LACNIC</a> & <a href="https://www.nicmexico.mx/">NIC.MX</a>
+					</p>
+				</div>
+			</div>
 		</div>
-	</div>
-
+	</section>		
 	<section class="site-section bg-blue-dark">
 		<div class="container">
 			<div class="row">
