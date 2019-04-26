@@ -164,14 +164,14 @@ body {
 .small-nav {
   margin-right: 10px;
   margin-bottom: 30px; }
-  .small-nav ul li a {
+  .small-nav ul li a, .small-nav ul li a * {
     color: rgba(245, 245, 245, 0.5);
     font-size: 12px;
     font-weight: 300;
     padding: 0 3px; }
-    .small-nav ul li a.active-item {
+    .small-nav ul li a.active-item, .small-nav ul li a *.active-item {
       color: #3389ff; }
-      .small-nav ul li a.active-item:after {
+      .small-nav ul li a.active-item:after, .small-nav ul li a *.active-item:after {
         display: none; }
 
 @media (max-width: 1024px) {
