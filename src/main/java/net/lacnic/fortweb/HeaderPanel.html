@@ -9,11 +9,11 @@
 				<div class="col">
 					<div class="logo">
 						<wicket:link>
-							<a href="#" title="" class="d-flex">
+							<a href="HomePage.html" title="" class="d-flex">
 								<img src="assets/icons/logo_Fort.svg" alt="Fort">
-								<h1 class="text-blue-light">
-									<wicket:message key="template.title"/>
-								</h1>
+								<!--<h1 class="text-blue-light">-->
+									<!--<wicket:message key="template.title"/>-->
+								<!--</h1>-->
 							</a>
 						</wicket:link>
 
@@ -28,9 +28,9 @@
                     <div class="navigation">  
 						<nav class="site-nav small-nav d-flex justify-content-md-end">
 							<ul>
-								<li>
-									<div class="nav-item" wicket:id="locale_item">
-										<a wicket:id="locale_link"><label wicket:id="locale_label"></label></a>
+								<li wicket:id="locale_item">
+									<div class="nav-item" >
+										<a wicket:id="locale_link"><span wicket:id="locale_label"></span></a>
 									</div>
 								</li>
 							</ul>
