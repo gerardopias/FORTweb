@@ -2,23 +2,16 @@
 <html xmlns:wicket="http://wicket.apache.org">
 <body>
 <wicket:extend>
-	<div class="row" style="margin-top: 5rem!important;">
 
-	</div>
-	<div class="row mt-5">
-		<div class="col">
-			<h1>
-				<wicket:message key="contact.title"/>
-			</h1>
-			<div class="row mt-5">
+	<section class="site-section">
+		<div class="container">
+			<div class="row">
 				<div class="col">
-					<h3>
-						<wicket:message key="contact.general"/>
-					</h3>
-					<p>
-						<wicket:message key="contact.general.text"/>
-					</p>
-					<ul>
+
+					<h1><wicket:message key="contact.title"/></h1>
+					<h2><wicket:message key="contact.general"/></h2>
+					<p><wicket:message key="contact.general.text"/></p>
+					<ul class="list-bullet">
 						<li>
 							<wicket:message key="contact.mail"/>
 							info@fortproject.net
@@ -29,19 +22,11 @@
 						</li>
 					</ul>
 
-				</div>
-			</div>
-			<div class="row mt-5">
-				<div class="col">
+					<hr />
 
-					<h3>
-						<wicket:message key="contact.validator"/>
-					</h3>
-
-					<p>
-						<wicket:message key="contact.validator.text"/>
-					</p>
-					<ul>
+					<h2><wicket:message key="contact.validator"/></h2>
+					<p><wicket:message key="contact.validator.text"/></p>
+					<ul class="list-bullet">
 						<li>
 							<wicket:message key="contact.mail"/>
 							fortvalidator@fortproject.net
@@ -60,18 +45,10 @@
 						</li>
 					</ul>
 
-				</div>
-			</div>
-			<div class="row mt-5">
-				<div class="col">
+					<hr />
 
-					<h3>
-						<wicket:message key="contact.tt"/>
-					</h3>
-
-					<p>
-						<wicket:message key="contact.tt.text"/>
-					</p>
+					<h2><wicket:message key="contact.tt"/></h2>
+					<p><wicket:message key="contact.tt.text"/></p>
 					<!--<ul>-->
 					<!--<li>-->
 					<!--<wicket:message key="contact.mail"/>-->
@@ -94,7 +71,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>	
+	
 </wicket:extend>
 </body>
 </html>
