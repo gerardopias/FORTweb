@@ -12,10 +12,13 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg">
-					<h2 class="text-blue-light">Proyecto <strong>FORT</strong></h2>
-					<p class="text-high">FORT es una inicativa de LACNIC y NIC.MX por una Internet más libre y
-						abierta.</p>
-					<a href="#" class="btn">Conocer más</a>
+					<h2 class="text-blue-light"><wicket:message key="home.project.title.light.pre"/>
+						<strong>FORT</strong>
+						<wicket:message key="home.project.title.light.post"/></h2>
+					<p class="text-high">
+						<wicket:message key="home.about.subtitle"/>
+					</p>
+					<a href="#more" class="btn"><wicket:message key="home.project.link"/></a>
 				</div>
 				<div class="col-lg">
 					<figure>
@@ -28,7 +31,7 @@
 		</div>
 	</section>
 
-	<section class="site-section bg-blue-dark">
+	<section class="site-section bg-blue-dark" id="more">
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-lg-5">
@@ -42,7 +45,7 @@
 						<p>
 							<wicket:message key="home.validator.card.content"/>
 						</p>
-						<a href="https://nicmx.github.io/FORT-validator" class="btn">
+						<a href="https://gerardopias.github.io/FORTwebValidador" class="btn">
 							<wicket:message key="home.validator.card.link"/>
 						</a>
 					</div>

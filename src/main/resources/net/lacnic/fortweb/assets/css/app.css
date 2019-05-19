@@ -111,6 +111,7 @@ body {
   right: 0;
   height: 120px;
   width: 100%;
+  background-color: #152c38;
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -224,10 +225,9 @@ body {
       .small-nav ul li a.active-item:after, .small-nav ul li a *.active-item:after {
         display: none; }
 
-.navigation {
-  display: none; }
   @media (max-width: 1024px) {
     .navigation {
+      display: none;
       background: #10242d;
       padding: 40px;
       position: fixed;
