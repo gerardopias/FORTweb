@@ -38,46 +38,28 @@ figure img {
 * {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 16px; }
+  }
 
 h1, h2, h3, h4,
 h1 *, h2 *, h3 *, h4 * {
   color: white;
   font-weight: 300; }
 
-h1, h1 * {
-  font-size: 20px; }
-  @media (max-width: 768px) {
-    h1, h1 * {
-      font-size: 18px; } }
-
-h2, h2 * {
-  font-size: 70px; }
-  @media (max-width: 768px) {
-    h2, h2 * {
-      font-size: 30px; } }
-
-h3, h3 * {
-  font-size: 28px; }
-  @media (max-width: 768px) {
-    h3, h3 * {
-      font-size: 20px; } }
-
-h4, h4 * {
-  font-size: 24px; }
+h2.text-blue-light, h2.text-blue-light * {
+  font-size: 4.4rem; }
 
 strong {
   font-weight: 700; }
 
 .text-high,
 .text-high * {
-  font-size: 22px;
+  font-size: 1.38rem;
   font-weight: 300;
   line-height: normal; }
   @media (max-width: 768px) {
     .text-high,
     .text-high * {
-      font-size: 16px; } }
+      font-size: 1rem; } }
 
 .text-high {
   margin: 40px 0; }
