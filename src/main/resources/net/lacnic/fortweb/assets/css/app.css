@@ -342,4 +342,14 @@ body {
 .i-white {
   background: white; }
 
+.sponsor{
+  display: flex;
+  align-items: center;}
+
+.sponsor a img{
+  max-height: 100px;
+  max-width: 224px;
+  }
+
+
 /*# sourceMappingURL=app.css.map */

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
-		  type='text/css'/>
+	      type='text/css'/>
 </head>
 <body>
 <wicket:extend>
@@ -12,13 +12,17 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg">
-					<h2 class="text-blue-light"><wicket:message key="home.project.title.light.pre"/>
+					<h2 class="text-blue-light">
+						<wicket:message key="home.project.title.light.pre"/>
 						<strong>FORT</strong>
-						<wicket:message key="home.project.title.light.post"/></h2>
+						<wicket:message key="home.project.title.light.post"/>
+					</h2>
 					<p class="text-high">
 						<wicket:message key="home.about.subtitle"/>
 					</p>
-					<a href="#more" class="btn"><wicket:message key="home.project.link"/></a>
+					<a href="#more" class="btn">
+						<wicket:message key="home.project.link"/>
+					</a>
 				</div>
 				<div class="col-lg">
 					<figure>
@@ -118,29 +122,31 @@
 			</div>
 		</div>
 	</section>
-	<section class="site-section bg-blue-dark">
+	<section class="site-section bg-grey">
 		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4 class="text-blue-light text-center">
+			<div class="row  justify-content-md-center">
+				<div class="col-md-4 justify-content-center sponsor">
+					<!--<h4 class="text-blue-light text-center">
 						<wicket:message key="home.team.title"/>
-					</h4>
-					<p>
-						<wicket:link>
-							<a href="https://www.lacnic.net/"><img src="assets/icons/logo_LACNIC.png" alt="LACNIC"></a>
-						</wicket:link>
-						<wicket:link>
-							<a href="https://www.nicmexico.mx/"><img src="assets/icons/logo_NICMX.png" alt="NIC.MX"></a>
-						</wicket:link>
-					</p>
+					</h4>-->
+					<wicket:link>
+						<a href="https://www.nicmexico.mx/"><img src="assets/icons/logo_NICMX.png"
+						                                         alt="NIC.MX"></a>
+					</wicket:link>
 				</div>
-				<div class="col">
-					<h4 class="text-blue-light text-center">
-						<wicket:message key="home.sponsors.title"/>
-					</h4>
-					<p>
-						<a href="">OTF</a>
-					</p>
+				<div class="col-md-4 justify-content-center sponsor">
+
+					<wicket:link>
+						<a href="https://www.lacnic.net/"><img src="assets/icons/logo_LACNIC.png"
+						                                       alt="LACNIC"></a>
+					</wicket:link>
+				</div>
+				<div class="col-md-4 justify-content-center sponsor">
+
+					<wicket:link>
+						<a href="https://www.opentech.fund/"><img src="assets/icons/logo_OTF.png"
+						                                          alt="OTF"></a>
+					</wicket:link>
 				</div>
 			</div>
 		</div>
