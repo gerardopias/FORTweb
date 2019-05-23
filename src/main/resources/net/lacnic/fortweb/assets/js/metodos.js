@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     // Header fixed    
     $(function () {
-        var shrinkHeader = 200;
+        var shrinkHeader = 80;
         $(window).scroll(function () {
             var scroll = getCurrentScroll();
             if (scroll >= shrinkHeader) {

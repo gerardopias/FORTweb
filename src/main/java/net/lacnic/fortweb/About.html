@@ -8,87 +8,227 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<aside class="site-aside">
-						<ul class="list-bullet">
-							<li><a href="#challenge">
-								<wicket:message key="about.objective"/>
-							</a></li>
-							<li><a href="#goals">
-								<wicket:message key="about.context"/>
-							</a></li>
-							<li><a href="#impact">
-								<wicket:message key="about.tools"/>
+						<ul class="list-bullet-top">
+							<li><a href="#about">
+								<wicket:message key="about.section.about"/>
+							</a>
+								<ul class="list-bullet">
+									<li><a href="#challenge">
+										<wicket:message key="about.objective"/>
+									</a></li>
+									<li><a href="#goals">
+										<wicket:message key="about.context"/>
+									</a></li>
+									<li><a href="#impact">
+										<wicket:message key="about.tools"/>
+									</a></li>
+								</ul>
+							</li>
+							<li><a href="#team">
+								<wicket:message key="about.section.team"/>
 							</a></li>
 						</ul>
 					</aside>
 				</div>
 				<div class="col">
-					<div id="challenge">
+					<div id="about" class="about-section">
 						<h1>
 							<wicket:message key="about.title"/>
 						</h1>
-						<h3 class="text-blue-light">
-							<wicket:message key="about.objective"/>
-						</h3>
-						<p>
-							<wicket:message key="about.objective.p1"/>
-						</p>
-						<p>
-							<wicket:message key="about.objective.p2"/>
-						</p>
-						<p>
-							<wicket:message key="about.objective.p3"/>
-						</p>
-						<p>
-							<wicket:message key="about.objective.p4"/>
-						</p>
-						<p>
-							<wicket:message key="about.objective.p5"/>
-						</p>
-					</div>
-					<div id="goals">
-						<h3 class="text-blue-light">
-							<wicket:message key="about.context"/>
-						</h3>
+						<div id="challenge" class="about-section">
+							<h3 class="text-blue-light">
+								<wicket:message key="about.objective"/>
+							</h3>
+							<p>
+								<wicket:message key="about.objective.p1"/>
+							</p>
+							<p>
+								<wicket:message key="about.objective.p2"/>
+							</p>
+							<p>
+								<wicket:message key="about.objective.p3"/>
+							</p>
+							<p>
+								<wicket:message key="about.objective.p4"/>
+							</p>
+							<p>
+								<wicket:message key="about.objective.p5"/>
+							</p>
+						</div>
+						<div id="goals" class="about-section">
+							<h3 class="text-blue-light">
+								<wicket:message key="about.context"/>
+							</h3>
 
-						<p>
-							<wicket:message key="about.context.p1"/>
-						</p>
-						<p>
-							<wicket:message key="about.context.p2"/>
-						</p>
-						<p>
-							<wicket:message key="about.context.p3"/>
-						</p>
-						<p>
-							<wicket:message key="about.context.p4"/>
-						</p>
-						<p>
-							<wicket:message key="about.context.p5"/>
-						</p>
-						<p>
-							<wicket:message key="about.context.p6"/>
-						</p>
-						<p>
-							<wicket:message key="about.context.p7"/>
-						</p>
-					</div>
-					<div id="impact">
-						<h3 class="text-blue-light">
-							<wicket:message key="about.tools"/>
-						</h3>
+							<p>
+								<wicket:message key="about.context.p1"/>
+							</p>
+							<p>
+								<wicket:message key="about.context.p2"/>
+							</p>
+							<p>
+								<wicket:message key="about.context.p3"/>
+							</p>
+							<p>
+								<wicket:message key="about.context.p4"/>
+							</p>
+							<p>
+								<wicket:message key="about.context.p5"/>
+							</p>
+							<p>
+								<wicket:message key="about.context.p6"/>
+							</p>
+							<p>
+								<wicket:message key="about.context.p7"/>
+							</p>
+						</div>
+						<div id="impact" class="about-section">
+							<h3 class="text-blue-light">
+								<wicket:message key="about.tools"/>
+							</h3>
 
-						<p>
-							<wicket:message key="about.tools.p1"/>
-						</p>
-						<p>
-							<wicket:message key="about.tools.p2"/>
-						</p>
-						<p>
-							<wicket:message key="about.tools.p3"/>
-						</p>
-						<p>
-							<wicket:message key="about.tools.p4"/>
-						</p>
+							<p>
+								<wicket:message key="about.tools.p1"/>
+							</p>
+							<p>
+								<wicket:message key="about.tools.p2"/>
+							</p>
+							<p>
+								<wicket:message key="about.tools.p3"/>
+							</p>
+							<p>
+								<wicket:message key="about.tools.p4"/>
+							</p>
+						</div>
+					</div>
+
+					<div id="team" class="site-section">
+						<h1>
+							<wicket:message key="about.team.title"/>
+						</h1>
+						<p></p>
+						<div id="lacnic">
+							<h3 class="text-blue-light">
+								LACNIC
+							</h3>
+							<div class="card-deck">
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Gerardo Rada</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol1"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Guillermo Cicileo</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol2"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Carolina Caeiro</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol3"/>
+										</p>
+									</div>
+								</div>
+							</div>
+							<p></p>
+						</div>
+						<div id="nicmx">
+							<h3 class="text-blue-light">
+								NIC.MX
+							</h3>
+							<div class="card-deck">
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Jorge Cano</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol1"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Daniel H. Félix</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol4"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Alberto Leiva</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol4"/>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card-deck">
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Francisco Moreno</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol4"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Oswaldo Pérez</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol5"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Raúl Ramírez</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol5"/>
+										</p>
+									</div>
+								</div>
+							</div>
+							<p></p>
+						</div>
+
+						<div id="consultants">
+							<h3 class="text-blue-light">
+								<wicket:message key="about.team.consultants.title"/>
+							</h3>
+							<div class="card-deck">
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Gerardo Pías y Luciana Vitale (Matesoft)</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol6"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Augusto Mathurin</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol7"/>
+										</p>
+									</div>
+								</div>
+								<div class="card card-team border-secondary mb-3" style="max-width: 18rem;">
+									<div class="card-body">
+										<h5 class="card-title">Matthias Waehlisch</h5>
+										<p class="card-text">
+											<wicket:message key="about.team.rol8"/>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
