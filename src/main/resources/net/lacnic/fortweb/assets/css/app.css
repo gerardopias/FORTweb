@@ -365,4 +365,10 @@ html {
 footer figure img {
   max-width: 22rem; }
 
+.alert-fort {
+  color: #383d41;
+  background-color: #b1b3b7;
+  border-color: #d6d8db;
+}
+
 /*# sourceMappingURL=app.css.map */
