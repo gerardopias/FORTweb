@@ -13,9 +13,10 @@ import java.util.Locale;
 public class HeaderPanel extends Panel {
 	public HeaderPanel(String id) {
 		super(id);
-		final List<Locale> languageOptions = Arrays.asList(Locale.ENGLISH,
+		final List<Locale> languageOptions = Arrays.asList(
 				new Locale("es", "UY"),
-				new Locale("pt", "BR"));
+				Locale.ENGLISH/*,
+				new Locale("pt", "BR")*/);
 
 
 		final ListView<Locale> languages = new ListView<Locale>("locale_item", languageOptions) {
