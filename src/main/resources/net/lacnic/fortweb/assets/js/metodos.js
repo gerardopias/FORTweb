@@ -1,53 +1,52 @@
-$(document).ready(function () {
+$( document ).ready(function() {
 
-    //  Show nav + overlay-content
-    $('.menu-open').click(function () {
-        if ($(this).hasClass('clic')) {
+	//  Show nav + overlay-content
+    $('.menu-open').click(function() {
+        if($(this).hasClass('clic')){     
             closeNavigation();
-        } else {
+        }else{
             openNavigation();
         }
         $(this).toggleClass('clic');
     });
 
-    // $('.overlay-content').click(function() {
-    //     closeNavigation();
-    // });
-
-    // $('.menu-close').click(function() {
-    // 	closeNav();            
-    // });
-
-    function openNavigation() {
-        // $('body').addClass('nav-fixed');
-        $('.navigation').fadeIn();
-        // $('.js-overlay').fadeIn();
+    function openNavigation(){
+    	$('.navigation').fadeIn();
     }
 
-    function closeNavigation() {
-        // $('body').removeClass('nav-fixed');
-        $('.navigation').fadeOut();
-        // $('.js-overlay').fadeOut();
+    function closeNavigation(){
+    	$('.navigation').fadeOut();
     }
 
     // Header fixed    
-    $(function () {
-        var shrinkHeader = 80;
-        $(window).scroll(function () {
+    $(function(){        
+        var shrinkHeader = 200;
+        $(window).scroll(function() {
             var scroll = getCurrentScroll();
-            if (scroll >= shrinkHeader) {
+            if ( scroll >= shrinkHeader ) { 
                 $('.site-header').addClass('small-header');
-            } else {
+            }else {
                 $('.site-header').removeClass('small-header');
-            }
-        });
+            }    
+        }); 
     });
 
     function getCurrentScroll() {
         return window.pageYOffset || document.documentElement.scrollTop;
     }
 
-    $(document).ready(function () {
-        $('.site-nav > ul > li  a[disabled=disabled]').addClass('active-item');
-    })
+    // Scroll Nav
+    $(function() {
+        $('a.item-menu').bind('click', function(event) {
+            $('a.item-menu').removeClass("active");
+            $(this).addClass("active");
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 70
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+    });
+
 });
