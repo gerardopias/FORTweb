@@ -49,4 +49,8 @@ $( document ).ready(function() {
 
     });
 
+    $(document).ready(function () {
+        $('.site-nav > ul > li  a[disabled=disabled]').addClass('active-item');
+    })
+
 });
