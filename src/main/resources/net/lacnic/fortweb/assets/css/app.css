@@ -2,7 +2,7 @@
 * {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 14px; }
+  font-size: 16px; }
 
 h1, h2, h3, h4,
 h1 *, h2 *, h3 *, h4 * {
@@ -11,7 +11,6 @@ h1 *, h2 *, h3 *, h4 * {
 
 h1, h1 * {
   font-size: 35px;
-  font-weight: 300;
   margin-bottom: 20px; }
   @media (max-width: 768px) {
     h1, h1 * {
@@ -22,6 +21,9 @@ h1, h1 * {
     font-weight: 300; }
     h1.title-big strong, h1.title-big * strong, h1 *.title-big strong, h1 *.title-big * strong {
       font-weight: 700; }
+    @media (max-width: 768px) {
+      h1.title-big, h1.title-big *, h1 *.title-big, h1 *.title-big * {
+        font-size: 30px; } }
 
 h2, h2 * {
   font-size: 26px;
@@ -97,7 +99,7 @@ body {
     align-items: flex-end; }
     .site-header .logo a img {
       margin-right: 20px;
-      height: 70px; }
+      height: 60px; }
     .site-header .logo a h1 {
       margin: 0; }
   .site-header.small-header {
@@ -132,6 +134,8 @@ body {
       text-align: center; }
       .site-footer .text-right {
         text-align: center !important; } }
+  .site-footer a.d-flex {
+    margin: 15px 0 10px 0; }
 
 .site-section {
   padding: 80px 0; }
@@ -166,7 +170,7 @@ body {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -webkit-border-radius: 15px;
-  height: 280px;
+  height: 330px;
   padding: 40px; }
   .box h3, .box h3 * {
     color: white;
@@ -230,7 +234,7 @@ blockquote {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
-    padding: 0 15px;
+    padding: 0 10px;
     text-transform: uppercase; }
     .site-nav ul li a:hover, .site-nav ul li a:focus {
       color: #3389ff; }
@@ -407,10 +411,13 @@ blockquote {
 .language-bash > .nb {
   color: white; }
 
+.highlighter-rouge {
+  color: #DDA0DD; }
+
 .container {
-  max-width: 1250px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  max-width: 1180px;
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .btn {
   background: #66d394;
