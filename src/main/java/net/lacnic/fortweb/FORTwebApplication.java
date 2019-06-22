@@ -28,7 +28,8 @@ public class FORTwebApplication extends WebApplication {
     protected void init() {
         super.init();
         mountPage("/about",About.class);
-        mountPage("/trackingtool", FortTT.class);
+        mountPage("/monitor", FortMonitor.class);
+        mountPage("/validator", FortValidator.class);
         mountPage("/contact", Contact.class);
         getComponentInstantiationListeners().add(new SpringComponentInjector(this,
                 WebApplicationContextUtils.getRequiredWebApplicationContext(
