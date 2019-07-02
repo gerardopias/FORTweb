@@ -33,7 +33,7 @@ h2, h2 * {
       font-size: 22px; } }
 
 h3, h3 * {
-  color: #3389ff;
+  color: #009DCB;
   font-size: 20px;
   margin: 20px 0; }
   @media (max-width: 768px) {
@@ -67,7 +67,7 @@ strong {
     text-align: left !important; } }
 
 a {
-  color: #3389ff;
+  color: #009DCB;
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -162,10 +162,10 @@ body {
   .site-aside a {
     color: white; }
     .site-aside a.active * {
-      color: #3389ff; }
+      color: #009DCB; }
 
 .box {
-  border: 3px solid #3389ff;
+  border: 3px solid #009DCB;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -179,7 +179,7 @@ body {
     font-weight: 700;
     text-transform: uppercase; }
   .box h4, .box h4 * {
-    color: #3389ff;
+    color: #009DCB;
     margin: 10px 0; }
   @media (max-width: 1024px) {
     .box {
@@ -237,11 +237,11 @@ blockquote {
     padding: 0 10px;
     text-transform: uppercase; }
     .site-nav ul li a:hover, .site-nav ul li a:focus {
-      color: #3389ff; }
+      color: #009DCB; }
     .site-nav ul li a.active-item {
       position: relative; }
       .site-nav ul li a.active-item:after {
-        background: #3389ff;
+        background: #009DCB;
         content: "";
         position: absolute;
         bottom: -10px;
@@ -258,7 +258,7 @@ blockquote {
     font-weight: 300;
     padding: 0 3px; }
     .small-nav ul li a.active-item, .small-nav ul li a *.active-item {
-      color: #3389ff; }
+      color: #009DCB; }
       .small-nav ul li a.active-item:after, .small-nav ul li a *.active-item:after {
         display: none; }
 
@@ -283,7 +283,7 @@ blockquote {
           text-align: center;
           padding: 20px 0; }
           .navigation ul li a.active-item {
-            color: #3389ff; }
+            color: #009DCB; }
             .navigation ul li a.active-item:after {
               display: none; }
         .navigation ul li:last-child {
@@ -462,7 +462,7 @@ ul li {
     ul.list-bullet li:before,
     ul li.list-bullet li:before {
       content: "o";
-      color: #3389ff;
+      color: #009DCB;
       margin-right: 10px;
       font-size: 16px; }
     ul.list-bullet li ul,
@@ -474,7 +474,7 @@ ul li {
         ul.list-bullet li ul li:before,
         ul li.list-bullet li ul li:before {
           content: "-";
-          color: #3389ff;
+          color: #009DCB;
           margin-right: 5px;
           font-size: 16px; }
 
@@ -484,7 +484,7 @@ ul li {
 
 .text-blue-light,
 .text-blue-light * {
-  color: #3389ff !important; }
+  color: #009DCB !important; }
 
 .text-blue-dark,
 .text-blue-dark * {
@@ -494,3 +494,7 @@ figure img {
   max-width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
+
+a:hover {
+  color: #3389ff;
+}
