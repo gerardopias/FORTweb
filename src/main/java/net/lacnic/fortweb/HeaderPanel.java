@@ -15,8 +15,8 @@ public class HeaderPanel extends Panel {
 		super(id);
 		final List<Locale> languageOptions = Arrays.asList(
 				new Locale("es", "UY"),
-				Locale.ENGLISH/*,
-				new Locale("pt", "BR")*/);
+				Locale.ENGLISH,
+				new Locale("pt", "BR"));
 
 
 		final ListView<Locale> languages = new ListView<Locale>("locale_item", languageOptions) {
