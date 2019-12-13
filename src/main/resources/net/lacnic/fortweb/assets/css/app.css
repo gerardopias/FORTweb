@@ -170,7 +170,7 @@ body {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -webkit-border-radius: 15px;
-  height: 330px;
+  min-height: 100%;
   padding: 40px; }
   .box h3, .box h3 * {
     color: white;
@@ -191,6 +191,12 @@ body {
       .box.last {
         border: none;
         padding: 0; } }
+
+.card.box .card-footer {
+  border: none;
+  background-color:
+          rgba(0,0,0,.0);
+}
 
 .sponsor {
   display: flex;

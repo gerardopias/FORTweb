@@ -40,43 +40,71 @@
 	<section class="site-section bg-blue-dark" id="more">
 		<div class="container">
 			<div class="row justify-content-md-center">
-				<div class="col-lg-5">
-					<div class="box">
-						<h3>
-							<wicket:message key="home.validator.card"/>
-						</h3>
-						<h4>
-							<wicket:message key="home.validator.card.title"/>
-						</h4>
-						<p>
-							<wicket:message key="home.validator.card.content"/>
-						</p>
-						<wicket:link>
-							<a href="FortValidator.html" class="btn">
-							<wicket:message key="home.validator.card.link"/>
-							</a>
-						</wicket:link>
+				<div class="col-lg-4">
+					<div class="card box">
+						<div class="card-body">
+							<h3>
+								<wicket:message key="home.validator.card"/>
+							</h3>
+							<h4 class="card-title">
+								<wicket:message key="home.validator.card.title"/>
+							</h4>
+							<p class="card-text">
+								<wicket:message key="home.validator.card.content"/>
+							</p>
+						</div>
+						<div class="card-footer">
+							<wicket:link>
+								<a href="FortValidator.html" class="btn">
+									<wicket:message key="home.validator.card.link"/>
+								</a>
+							</wicket:link>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card box">
+						<div class="card-body">
+							<h3>
+								<wicket:message key="home.tt.card"/>
+							</h3>
+							<h4 class="card-title">
+								<wicket:message key="home.tt.card.title"/>
+							</h4>
+							<p class="card-text">
+								<wicket:message key="home.tt.card.content"/>
+							</p>
+						</div>
+						<div class="card-footer">
+							<wicket:link>
+								<a href="FortMonitor.html" class="btn">
+									<wicket:message key="home.tt.card.link"/>
+								</a>
+							</wicket:link>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card box">
+						<div class="card-body">
+							<h3>
+								<wicket:message key="home.report.card"/>
+							</h3>
+							<h4 class="card-title">
+								<wicket:message key="home.report.card.title"/>
+							</h4>
+							<p class="card-text">
+								<wicket:message key="home.report.card.content"/>
+							</p>
+						</div>
+						<div class="card-footer">
+							<wicket:link>
+								<a href="assets/reports/FORT-Report.pdf" target="_blank" class="btn"><wicket:message key="home.report.card.link"/></a>
+							</wicket:link>
+						</div>
+					</div>
+				</div>
 
-					</div>
-				</div>
-				<div class="col-lg-5">
-					<div class="box">
-						<h3>
-							<wicket:message key="home.tt.card"/>
-						</h3>
-						<h4>
-							<wicket:message key="home.tt.card.title"/>
-						</h4>
-						<p>
-							<wicket:message key="home.tt.card.content"/>
-						</p>
-						<wicket:link>
-							<a href="FortMonitor.html" class="btn">
-								<wicket:message key="home.tt.card.link"/>
-							</a>
-						</wicket:link>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
